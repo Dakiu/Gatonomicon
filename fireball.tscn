@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq7b7hh4ph160"]
+
+[ext_resource type="Script" path="res://scripts/fireball.gd" id="1_ml0rn"]
+[ext_resource type="Texture2D" uid="uid://qgsmkfiche50" path="res://art/playerGrey_up2.png" id="2_ewcvk"]
+
+[node name="fireball" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_ml0rn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ewcvk")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
